@@ -8,30 +8,30 @@ public class desafio1 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int N = Integer.parseInt(scanner.nextLine());  // Ler o valor de N
+        int N = Integer.parseInt(scanner.nextLine());   
 
-        List<Integer> pares = new ArrayList<>();  // Lista para armazenar os números pares
-        List<Integer> impares = new ArrayList<>();  // Lista para armazenar os números ímpares
+        List<Integer> pares = new ArrayList<>();   
+        List<Integer> impares = new ArrayList<>(); 
 
-        // Iterar N vezes para ler os valores de entrada
+   
         for (int i = 0; i < N; i++) {
             int valor = Integer.parseInt(scanner.nextLine());
             if (valor % 2 == 0) {
-                pares.add(valor);  // Adicionar número par à lista de pares
+                pares.add(valor);   
             } else {
-                impares.add(valor);  // Adicionar número ímpar à lista de ímpares
+                impares.add(valor);   
             }
         }
 
-        Collections.sort(pares);  // Ordenar os números pares em ordem crescente
-        Collections.sort(impares, Collections.reverseOrder());  // Ordenar os números ímpares em ordem decrescente
+        Collections.sort(pares);   
+        Collections.sort(impares, Collections.reverseOrder()); 
 
-        // Imprimir os números pares em ordem crescente
+    
         for (int par : pares) {
             System.out.println(par);
         }
 
-        // Imprimir os números ímpares em ordem decrescente
+      
         for (int impar : impares) {
             System.out.println(impar);
         }
